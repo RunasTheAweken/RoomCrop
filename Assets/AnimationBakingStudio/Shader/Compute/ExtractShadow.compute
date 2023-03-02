@@ -1,0 +1,26 @@
+﻿#pragma kernel ExtractShadowFunction
+
+StructuredBuffer<float4> blackBuffer;
+StructuredBuffer<float4> whiteBuffer;
+
+uint width;
+
+RWStructuredBuffer<float4> resultBuffer;
+
+[numthreads(1024, 1, 1)]
+void ExtractShadowFunction (uint3 id : SV_DispatchThreadID)
+{
+    uint x = id.x % width;
+    uint y = id.x / width;
+    uint index = y * width + x;
+
+    float4 pixelOnBlack = blackBuffer[index];
+    float4 pixelOnWhite = whiteBuffer[index];
+    
+    float r = 0;
+    float g = 0;
+    float b = 0;
+    float a = 1.0 - (pixelOnWhite.r - pixelOnBlack.r);
+
+    resultBuffer[index] = float4(r, g, b, a);
+}
