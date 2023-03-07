@@ -167,7 +167,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.1
-  far clip plane: 12.6015
+  far clip plane: 6.928203
   field of view: 60
   orthographic: 1
   orthographic size: 3
@@ -194,7 +194,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 240335009}
   m_LocalRotation: {x: 0, y: 0.9659259, z: -0.25881907, w: -0}
-  m_LocalPosition: {x: 29.4991, y: 4.5070415, z: -10.487518}
+  m_LocalPosition: {x: 29.093792, y: 2.43713, z: -13.076462}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -455,6 +455,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4510414256689678634, guid: cd0cfcf8a1d847348ae3e0cbff5f1b80,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: cd0cfcf8a1d847348ae3e0cbff5f1b80,
         type: 3}
       propertyPath: m_Name
@@ -642,7 +647,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1897642782}
   m_LocalRotation: {x: 0, y: 0.9659259, z: -0.25881907, w: -0}
-  m_LocalPosition: {x: 29.4991, y: 4.5070415, z: -10.487518}
+  m_LocalPosition: {x: 29.093792, y: 2.43713, z: -13.076462}
   m_LocalScale: {x: 1, y: 0.99999994, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -752,7 +757,7 @@ MonoBehaviour:
     isLooping: 0
     customizer: {fileID: 0}
   referenceController: {fileID: 9100000, guid: 13d0fec74b9b6b647bbeaf081975b09d, type: 2}
-  outputController: {fileID: 0}
+  outputController: {fileID: 9100000, guid: 9e2e1ec1e8a46c94bae532e41ea5e400, type: 2}
   currentAngle: 0
 --- !u!65 &1984607313
 BoxCollider:
